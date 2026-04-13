@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjana K N | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SKN</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Sanjana K N</span></h1>
+            <p>Web Developer | CSE Student at KSIT</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about" class="section reveal">
+            <h2>Professional Summary</h2>
+            <p>Motivated and detail-oriented professional with experience in web development and a strong interest in building clean, user-friendly applications. Currently pursuing ECE at DSCE (2023-2026).</p>
+        </section>
+
+        <section id="skills" class="section reveal">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-html5"></i> HTML</div>
+                <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS</div>
+                <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill-card"><i class="fas fa-code"></i> Web Design</div>
+                <div class="skill-card"><i class="fas fa-lightbulb"></i> Problem Solving</div>
+                <div class="skill-card"><i class="fas fa-users"></i> Collaboration</div>
+            </div>
+        </section>
+
+        <section id="experience" class="section reveal">
+            <h2>Experience</h2>
+            <div class="timeline-item">
+                <h3>Web Developer – Suprmentr Technologies</h3>
+                <span class="date">Feb 2026 – June 2026</span>
+                <ul>
+                    <li>Developed and maintained web pages using HTML and CSS.</li>
+                    <li>Collaborated with team members on small projects.</li>
+                    <li>Improved website layout and usability.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section reveal">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Personal Portfolio</h3>
+                    <p>A responsive site to showcase work and skills.</p>
+                </div>
+                <div class="project-card">
+                    <h3>To-Do List App</h3>
+                    <p>A dynamic productivity tool built with JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> sanjananagraj@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 89xxxxxxxx</p>
+                <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sanjana K N. Built with passion.</p>
+    </footer>
+
+    <script>
+        // Interactive Scroll Reveal effect
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                var revealPoint = 150;
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
